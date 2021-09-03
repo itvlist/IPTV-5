@@ -271,12 +271,265 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g --proxy socks4://114.34.115.110:5678/ https://www.youtube.com/watch?v=sPgqEHsONK8)
+        EOL
+    - name: Get france24.m3u8
+      run: |
+        touch ./france24.m3u8
+        sudo cat >./france24.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=aHh8rA0hks8)
+        EOL
+    - name: Get VTube.m3u8
+      run: |
+        touch ./VTube.m3u8
+        sudo cat >./VTube.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g --proxy socks4://210.61.216.66:33990/ https://www.youtube.com/watch?v=JAzRXylm3M0)
+        EOL
+    - name: Get DW.m3u8
+      run: |
+        touch ./DW.m3u8
+        sudo cat >./DW.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=NjugILSG_Wo)
+        EOL
+    - name: Get parliamentarytv1.m3u8
+      run: |
+        touch ./parliamentarytv1.m3u8
+        sudo cat >./parliamentarytv1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=PQLMD4iHhG8)
+        EOL
+    - name: Get parliamentarytv2.m3u8
+      run: |
+        touch ./parliamentarytv2.m3u8
+        sudo cat >./parliamentarytv2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=T8dcZHk4xWs)
+        EOL
+    - name: Get parliamentarytv3.m3u8
+      run: |
+        touch ./parliamentarytv3.m3u8
+        sudo cat >./parliamentarytv3.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=XBQ-C1Agj3I)
+        EOL
+    - name: Get parliamentarytv4.m3u8
+      run: |
+        touch ./parliamentarytv4.m3u8
+        sudo cat >./parliamentarytv4.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=aidbpEp3TQ4)
+        EOL
+    - name: Get parliamentarytv5.m3u8
+      run: |
+        touch ./parliamentarytv5.m3u8
+        sudo cat >./parliamentarytv5.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=AKbn-Z1aOuk)
+        EOL
+    - name: Get PeppaPig_song.m3u8 
+      run: |
+        touch ./PeppaPig_song.m3u8 
+        sudo cat >./PeppaPig_song.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=blmhQUQW3r8)
+        EOL
+    - name: Get PeppaPig_play.m3u8 
+      run: |
+        touch ./PeppaPig_play.m3u8 
+        sudo cat >./PeppaPig_play.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=D3zT7P55OXM)
+        EOL
+    - name: Get TalkingTom1.m3u8 
+      run: |
+        touch ./TalkingTom1.m3u8 
+        sudo cat >./TalkingTom1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=keIt6LJEC44)
+        EOL
+    - name: Get TalkingTom2.m3u8 
+      run: |
+        touch ./TalkingTom2.m3u8 
+        sudo cat >./TalkingTom2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=Wh8QyM8HuOI)
+        EOL
+    - name: Get para1.m3u8 
+      run: |
+        touch ./para1.m3u8 
+        sudo cat >./para1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=aHjQDqx2jHY)
+        EOL
+    - name: Get para2.m3u8 
+      run: |
+        touch ./para2.m3u8 
+        sudo cat >./para2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=4I1ozKt4GEo)
+        EOL
+    - name: Get para3.m3u8 
+      run: |
+        touch ./para3.m3u8 
+        sudo cat >./para3.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=OV0m8pMaKus)
+        EOL
+    - name: Get RepublicTV.m3u8 
+      run: |
+        touch ./RepublicTV.m3u8 
+        sudo cat >./RepublicTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=xtoOK86mW8Y)
+        EOL
+    - name: Get Romantic_Piano_Music.m3u8 
+      run: |
+        touch ./Romantic_Piano_Music.m3u8 
+        sudo cat >./Romantic_Piano_Music.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=uPCy5_qc_5A)
+        EOL
+    - name: Get Rain_Sounds_Piano_Music.m3u8 
+      run: |
+        touch ./RRain_Sounds_Piano_Music.m3u8 
+        sudo cat >./Rain_Sounds_Piano_Music.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=Yx1wtgBi7w0)
+        EOL
+    - name: Get K-POP_Radio.m3u8 
+      run: |
+        touch ./K-POP_Radio.m3u8 
+        sudo cat >./K-POP_Radio.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=RFHj_vjVxqM)
+        EOL
+    - name: Get JAPAN_WALK.m3u8 
+      run: |
+        touch ./JAPAN_WALK.m3u8 
+        sudo cat >./JAPAN_WALK.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=7B9mi5B93YY)   
+        EOL
+    - name: Get KBS_KOREA.m3u8 
+      run: |
+        touch ./KBS_KOREA.m3u8 
+        sudo cat >./KBS_KOREA.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://youtu.be/zBli-UU2s_U)
+        EOL
+    - name: Get K-POP.m3u8 
+      run: |
+        touch ./K-POP.m3u8 
+        sudo cat >./K-POP.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://youtu.be/F4aby5WN1Rw)
+        EOL
+    - name: Get Live_Hong_Kong.m3u8 
+      run: |
+        touch ./Live_Hong_Kong.m3u8 
+        sudo cat >./Live_Hong_Kong.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://youtu.be/_R_fwpm65GM)
+        EOL
+    - name: Get Live_Seoul_Korea1.m3u8 
+      run: |
+        touch ./Live_Seoul_Korea1.m3u8 
+        sudo cat >./Live_Seoul_Korea1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://youtu.be/SFx5AzqAU5Y)
+        EOL
+    - name: Get Live_Seoul_Korea2.m3u8 
+      run: |
+        touch ./Live_Seoul_Korea2.m3u8 
+        sudo cat >./Live_Seoul_Korea2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://youtu.be/HH6E6ZiO6kM)
+        EOL
+    - name: Get Live_Seoul_Korea3.m3u8 
+      run: |
+        touch ./Live_Seoul_Korea3.m3u8 
+        sudo cat >./Live_Seoul_Korea3.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://youtu.be/L6J9rCsD8hI)
+        EOL
+    - name: Get Live_Seoul_Korea4.m3u8 
+      run: |
+        touch ./Live_Seoul_Korea4.m3u8 
+        sudo cat >./Live_Seoul_Korea4.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://youtu.be/D-GvoX_hA0A)
+        EOL
+    - name: Get Live_Seoul_Korea5.m3u8 
+      run: |
+        touch ./Live_Seoul_Korea5.m3u8 
+        sudo cat >./Live_Seoul_Korea5.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://youtu.be/oEk1cUwZNKY)
+        
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: MTlive m3u8
+        name: YTlive m3u8
         path: .
-    - name: Git push assets to "MTlive" branch
+    - name: Git push assets to "YTlive" branch
       run: |
         git init
         git config --local user.name "actions"
