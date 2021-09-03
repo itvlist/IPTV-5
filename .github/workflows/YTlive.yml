@@ -83,24 +83,6 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=aHh8rA0hks8)
         EOL
-    - name: Get hyxw.m3u8
-      run: |
-        touch ./hyxw.m3u8
-        sudo cat >./hyxw.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/channel/UCp2f7tGJGN6R9Muxipem8Nw/live)
-        EOL
-    - name: Get tvbsnews.m3u8
-      run: |
-        touch ./tvbsnews.m3u8
-        sudo cat >./tvbsnews.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/watch?v=V0WxUakDV7M)
-        EOL
     - name: Get PTS.m3u8
       run: |
         touch ./PTS.m3u8
@@ -127,24 +109,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=T8dcZHk4xWs)
-        EOL
-    - name: Get bll.m3u8
-      run: |
-        touch ./bll.m3u8
-        sudo cat >./bll.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/watch?v=Lc21evKC1jg)
-        EOL
-    - name: Get ctixw.m3u8
-      run: |
-        touch ./ctixw.m3u8
-        sudo cat >./ctixw.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/watch?v=lu_BJKxqGnk)
         EOL
     - name : Upload artifact
       uses: actions/upload-artifact@master
