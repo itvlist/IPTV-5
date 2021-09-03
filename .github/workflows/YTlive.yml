@@ -137,15 +137,6 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=Lc21evKC1jg)
         EOL
-    - name: Get hyxww.m3u8
-      run: |
-        touch ./hyxww.m3u8
-        sudo cat >./hyxww.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/watch?v=mhm5rbcWi5k)
-        EOL
     - name: Get ctixw.m3u8
       run: |
         touch ./ctixw.m3u8
