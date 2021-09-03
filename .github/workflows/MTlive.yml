@@ -559,7 +559,213 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g https://youtu.be/jL1Cqww7YxY)
-        
+        EOL
+    - name: Get Shuffle_Dance_Music5.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music5.m3u8 
+        sudo cat >./Shuffle_Dance_Music5.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=Phtto7qTCNw)
+        EOL
+    - name: Get Shuffle_Dance_Music6.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music6.m3u8 
+        sudo cat >./Shuffle_Dance_Music6.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=P4z09EV9Sn8)
+        EOL
+    - name: Get Shuffle_Dance_Music7.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music7.m3u8 
+        sudo cat >./Shuffle_Dance_Music7.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=EZuHfEKN6hQ)
+        EOL
+    - name: Get Shuffle_Dance_Music8.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music8.m3u8 
+        sudo cat >./Shuffle_Dance_Music8.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=xgQwpsp1tyE)
+        EOL
+    - name: Get Shuffle_Dance_Music9.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music9.m3u8 
+        sudo cat >./Shuffle_Dance_Music9.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=4BFDlT4Qvg4)
+        EOL
+    - name: Get Shuffle_Dance_Music_1.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music_1.m3u8 
+        sudo cat >./Shuffle_Dance_Music_1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=NaMFhPyDiE4)
+        EOL
+    - name: Get Shuffle_Dance_Music_2.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music_2.m3u8 
+        sudo cat >./Shuffle_Dance_Music_2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=cVnScLyRw4c)
+        EOL
+    - name: Get Shuffle_Dance_Music_3.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music_3.m3u8 
+        sudo cat >./Shuffle_Dance_Music_3.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=jL1Cqww7YxY)
+        EOL
+    - name: Get Shuffle_Dance_Music_4.m3u8 
+      run: |
+        touch ./Shuffle_Dance_Music_4.m3u8 
+        sudo cat >./Shuffle_Dance_Music_4.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=yVq92kqIrsE)
+        EOL
+    - name: Get SunMusic.m3u8 
+      run: |
+        touch ./SunMusic.m3u8 
+        sudo cat >./SunMusic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=3QXIXYEBH4c)
+        EOL
+    - name: Get Chainsmokers_Style.m3u8 
+      run: |
+        touch ./Chainsmokers_Style.m3u8 
+        sudo cat >./Chainsmokers_Style.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=8twT81R-ESQ)
+        EOL
+    - name: Get relax_music.m3u8 
+      run: |
+        touch ./relax_music.m3u8 
+        sudo cat >./relax_music.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=lcYJhHqotIQ)
+        EOL
+    - name: Get Bass_Music1.m3u8 
+      run: |
+        touch ./Bass_Music1.m3u8 
+        sudo cat >./Bass_Music1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=FM6MKgVcfyo)
+        EOL
+    - name: Get Bass_Music2.m3u8 
+      run: |
+        touch ./Bass_Music2.m3u8 
+        sudo cat >./Bass_Music2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=80RcX2waLCU)
+        EOL
+    - name: Get Bass_Music3.m3u8 
+      run: |
+        touch ./Bass_Music3.m3u8 
+        sudo cat >./Bass_Music3.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=zPqJU7fD4DY)
+        EOL
+    - name: Get Jazz_Piano_Radio.m3u8 
+      run: |
+        touch ./Jazz_Piano_Radio.m3u8 
+        sudo cat >./Jazz_Piano_Radio.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=Dx5qFachd3A)
+        EOL
+    - name: Get Space_Ambient_Music.m3u8 
+      run: |
+        touch ./Space_Ambient_Music.m3u8 
+        sudo cat >./Space_Ambient_Music <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=tNkZsRW7h2c)
+        EOL
+    - name: Get Piano_Music.m3u8 
+      run: |
+        touch ./Piano_Music.m3u8 
+        sudo cat >./Piano_Music.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=Vsw3-cFuM4M)
+        EOL
+    - name: Get Sleep_Music.m3u8 
+      run: |
+        touch ./Sleep_Music.m3u8 
+        sudo cat >./Sleep_Music.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=9a0fxrEwD_E)
+        EOL
+    - name: Get Beautiful_Piano_Music.m3u8 
+      run: |
+        touch ./Beautiful_Piano_Music.m3u8 
+        sudo cat >./Beautiful_Piano_Music <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=DLT8pOL78HQ)
+        EOL
+    - name: Get KOMPASTV.m3u8 
+      run: |
+        touch ./KOMPASTV.m3u8 
+        sudo cat >./KOMPASTV <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=8o49U8xAfZ4)
+        EOL
+    - name: Get Relaxing_Music.m3u8 
+      run: |
+        touch ./Relaxing_Music.m3u8 
+        sudo cat >./Relaxing_Music <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=Eo5RPdTt0e0)
+        EOL
+    - name: Get Peaceful_Music.m3u8 
+      run: |
+        touch ./Peaceful_Music.m3u8 
+        sudo cat >./Peaceful_Music <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=FjHGZj2IjBk)
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
