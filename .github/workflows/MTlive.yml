@@ -154,7 +154,6 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
         $(youtube-dl -g https://youtu.be/A_fKA-bcgrM)
-        EOL    
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
