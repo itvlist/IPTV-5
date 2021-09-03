@@ -146,14 +146,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=mhm5rbcWi5k)
         EOL
-    - name: Get slxww.m3u8
+    - name: Get zsxw.m3u8
       run: |
-        touch ./slxww.m3u8
-        sudo cat >./slxww.m3u8 <<EOL
+        touch ./zsxw.m3u8
+        sudo cat >./zsxw.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/watch?v=mhm5rbcWi5k)
+        $(youtube-dl -g https://www.youtube.com/watch?v=lu_BJKxqGnk)
         EOL    
     - name : Upload artifact
       uses: actions/upload-artifact@master
