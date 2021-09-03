@@ -743,7 +743,7 @@ jobs:
     - name: Get KOMPASTV.m3u8 
       run: |
         touch ./KOMPASTV.m3u8 
-        sudo cat >./KOMPASTV <<EOL
+        sudo cat >./KOMPASTV.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
@@ -761,7 +761,7 @@ jobs:
     - name: Get Peaceful_Music.m3u8 
       run: |
         touch ./Peaceful_Music.m3u8 
-        sudo cat >./Peaceful_Music <<EOL
+        sudo cat >./Peaceful_Music.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
