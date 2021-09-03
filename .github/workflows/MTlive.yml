@@ -101,10 +101,10 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
         $(youtube-dl -g https://youtu.be/YrCs0LDprrk)
         EOL
-    - name: Get cndj1.m3u8
+    - name: Get cndj2.m3u8
       run: |
-        touch ./cndj1.m3u8
-        sudo cat >./cndj1.m3u8 <<EOL
+        touch ./cndj2.m3u8
+        sudo cat >./cndj2.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
