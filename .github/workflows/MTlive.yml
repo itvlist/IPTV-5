@@ -707,7 +707,7 @@ jobs:
     - name: Get Space_Ambient_Music.m3u8 
       run: |
         touch ./Space_Ambient_Music.m3u8 
-        sudo cat >./Space_Ambient_Music <<EOL
+        sudo cat >./Space_Ambient_Music.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
@@ -734,7 +734,7 @@ jobs:
     - name: Get Beautiful_Piano_Music.m3u8 
       run: |
         touch ./Beautiful_Piano_Music.m3u8 
-        sudo cat >./Beautiful_Piano_Music <<EOL
+        sudo cat >./Beautiful_Piano_Music.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
@@ -752,7 +752,7 @@ jobs:
     - name: Get Relaxing_Music.m3u8 
       run: |
         touch ./Relaxing_Music.m3u8 
-        sudo cat >./Relaxing_Music <<EOL
+        sudo cat >./Relaxing_Music.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
