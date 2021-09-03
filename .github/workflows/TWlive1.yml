@@ -1,0 +1,163 @@
+name: Get YouTube Live m3u8
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Install youtube-dl
+      run: |
+        sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+        sudo chmod a+rx /usr/local/bin/youtube-dl
+    - name: Get ebcnews.m3u8
+      run: |
+        touch ./ebcnews.m3u8
+        sudo cat >./ebcnews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=R2iMq5LKXco)
+        EOL
+    - name: Get ebc.m3u8
+      run: |
+        touch ./ebc.m3u8
+        sudo cat >./ebc.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=ABn_ccXn_jc)
+        EOL
+    - name: Get tvbs.m3u8
+      run: |
+        touch ./tvbs.m3u8
+        sudo cat >./tvbs.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://youtu.be/hP6_jfCFxyQ)
+        EOL
+    - name: Get tomjerry.m3u8
+      run: |
+        touch ./tomjerry.m3u8
+        sudo cat >./tomjerry.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=rwZqRU71CpU)
+        EOL
+    - name: Get hsxw.m3u8
+      run: |
+        touch ./hsxw.m3u8
+        sudo cat >./hsxw.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=yUTy1U1wTwE)
+        EOL
+    - name: Get slxw.m3u8
+      run: |
+        touch ./slxw.m3u8
+        sudo cat >./slxw.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=pJ0VgJloR9E)
+        EOL
+    - name: Get tsxw.m3u8
+      run: |
+        touch ./tsxw.m3u8
+        sudo cat >./tsxw.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://youtu.be/xL0ch83RAK8CTI)
+        EOL
+    - name: Get earth.m3u8
+      run: |
+        touch ./earth.m3u8
+        sudo cat >./earth.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=Hj4rlbbQK7o)
+        EOL
+    - name: Get nasalive.m3u8
+      run: |
+        touch ./nasalive.m3u8
+        sudo cat >./nasalive.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=nA9UZF-SZoQ)
+        EOL
+    - name: Get cndj1.m3u8
+      run: |
+        touch ./cndj1.m3u8
+        sudo cat >./cndj1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://youtu.be/YrCs0LDprrk)
+        EOL
+    - name: Get cndj1.m3u8
+      run: |
+        touch ./cndj1.m3u8
+        sudo cat >./cndj1.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g ttps://youtu.be/Kjz8IQQEjNE)
+        EOL
+    - name: Get msxw.m3u8
+      run: |
+        touch ./msxw.m3u8
+        sudo cat >./msxw.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://youtu.be/XxJKnDLYZz4)
+        EOL
+    - name: Get xintangrenasia.m3u8
+      run: |
+        touch ./xintangrenasia.m3u8
+        sudo cat >./xintangrenasia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://youtu.be/wSKE3A40SIk)
+        EOL
+    - name: Get guqumusic.m3u8
+      run: |
+        touch ./guqumusic.m3u8
+        sudo cat >./guqumusic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://youtu.be/dmyAa2TiYr4)
+        EOL
+    - name: Get ABCnews.m3u8
+      run: |
+        touch ./ABCnews.m3u8
+        sudo cat >./ABCnews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://youtu.be/w_Ma8oQLmSM)
+        EOL
+    - name : Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: YTlive11 m3u8
+        path: .
+    - name: Git push assets to "YTlive11" branch
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout -b YTlive11
+        git add .
+        git commit -m "Update YTlive1"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git push -f -u origin YTlive1
