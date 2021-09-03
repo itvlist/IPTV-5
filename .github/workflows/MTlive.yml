@@ -190,6 +190,87 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=wEOEy2RfHW0)
+        EOL
+    - name: Get bll.m3u8
+      run: |
+        touch ./bll.m3u8
+        sudo cat >./bll.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=Lc21evKC1jg)
+        EOL
+    - name: Get tvbsnews.m3u8
+      run: |
+        touch ./tvbsnews.m3u8
+        sudo cat >./tvbsnews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=V0WxUakDV7M)
+        EOL
+    - name: Get hyxw.m3u8
+      run: |
+        touch ./hyxw.m3u8
+        sudo cat >./hyxw.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/channel/UCp2f7tGJGN6R9Muxipem8Nw/live)
+        EOL
+    - name: Get hy.m3u8
+      run: |
+        touch ./hy.m3u8
+        sudo cat >./hy.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=mhm5rbcWi5k)
+        EOL
+    - name: Get ctixw.m3u8
+      run: |
+        touch ./ctixw.m3u8
+        sudo cat >./ctixw.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=lu_BJKxqGnk)
+        EOL
+    - name: Get aljazeera.m3u8
+      run: |
+        touch ./aljazeera.m3u8
+        sudo cat >./aljazeera.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=-upyPouRrB8)
+        EOL
+    - name: Get ABCNEWS_Australia.m3u8
+      run: |
+        touch ./ABCNEWS_Australia.m3u8
+        sudo cat >./ABCNEWS_Australia.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=W1ilCy6XrmI)
+        EOL
+    - name: Get africanews.m3u8
+      run: |
+        touch ./africanews.m3u8
+        sudo cat >./africanews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=NQjabLGdP5g)
+        EOL
+    - name: Get euronews.m3u8
+      run: |
+        touch ./euronews.m3u8
+        sudo cat >./euronews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g --proxy socks4://114.34.115.110:5678/ https://www.youtube.com/watch?v=sPgqEHsONK8)
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
