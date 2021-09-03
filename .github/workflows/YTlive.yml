@@ -146,15 +146,6 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=mhm5rbcWi5k)
         EOL
-    - name: Get ctixw.m3u8
-      run: |
-        touch ./ctixw.m3u8
-        sudo cat >./ctixw.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/watch?v=lu_BJKxqGnk)
-        EOL
     - name: Get slxw.m3u8
       run: |
         touch ./slxw.m3u8
@@ -164,42 +155,6 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=pJ0VgJloR9E)
         EOL    
-    - name: Get tvbs.m3u8
-      run: |
-        touch ./tvbs.m3u8
-        sudo cat >./tvbs.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://youtu.be/hP6_jfCFxyQ)
-        EOL    
-    - name: Get hsxw.m3u8
-      run: |
-        touch ./hsxw.m3u8
-        sudo cat >./hsxw.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/watch?v=yUTy1U1wTwE)
-        EOL        
-    - name: Get tsxw.m3u8
-      run: |
-        touch ./tsxw.m3u8
-        sudo cat >./tsxw.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://youtu.be/xL0ch83RAK8CTI)
-        EOL            
-    - name: Get nasalive.m3u8
-      run: |
-        touch ./nasalive.m3u8
-        sudo cat >./nasalive.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/watch?v=nA9UZF-SZoQ)
-        EOL                
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
