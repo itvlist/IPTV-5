@@ -92,23 +92,23 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=nA9UZF-SZoQ)
         EOL
-    - name: Get cndj1.m3u8
+    - name: Get GEONEWS.m3u8
       run: |
-        touch ./cndj1.m3u8
-        sudo cat >./cndj1.m3u8 <<EOL
+        touch ./GEONEWS.m3u8
+        sudo cat >./GEONEWS.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
-        $(youtube-dl -g https://youtu.be/YrCs0LDprrk)
+        $(youtube-dl -g https://www.youtube.com/watch?v=HrrpR7zjFpU)
         EOL
-    - name: Get cndj2.m3u8
+    - name: Get NBCNEWS.m3u8
       run: |
-        touch ./cndj2.m3u8
-        sudo cat >./cndj2.m3u8 <<EOL
+        touch ./NBCNEWS.m3u8
+        sudo cat >./NBCNEWS.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
-        $(youtube-dl -g https://youtu.be/Kjz8IQQEjNE)
+        $(youtube-dl -g https://www.youtube.com/watch?v=F2YDjZHLq3c)
         EOL
     - name: Get msxw.m3u8
       run: |
@@ -154,6 +154,42 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
         $(youtube-dl -g https://youtu.be/A_fKA-bcgrM)
+        EOL
+    - name: Get zeelive.m3u8
+      run: |
+        touch ./zeelive.m3u8
+        sudo cat >./zeelive.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=F0K9Iv0pReU)
+        EOL
+    - name: Get ZeeBusiness.m3u8
+      run: |
+        touch ./ZeeBusiness.m3u8
+        sudo cat >./ZeeBusiness.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=uG0Dk_3BTgQ)
+        EOL
+    - name: Get CNBCawaaz.m3u8
+      run: |
+        touch ./CNBCawaaz.m3u8
+        sudo cat >./CNBCawaaz.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=NkMaFG2v71Y)
+        EOL
+    - name: Get PeppaPig.m3u8
+      run: |
+        touch ./PeppaPig.m3u8
+        sudo cat >./PeppaPig.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=wEOEy2RfHW0)
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
