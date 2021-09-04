@@ -38,10 +38,10 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
         $(youtube-dl -g https://youtu.be/hP6_jfCFxyQ)
         EOL
-    - name: Get tomjerry.m3u8
+    - name: Get tomjerry.mp4
       run: |
-        touch ./tomjerry.m3u8
-        sudo cat >./tomjerry.m3u8 <<EOL
+        touch ./tomjerry.mp4
+        sudo cat >./tomjerry.mp4 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANslxwIDTH=2560000
