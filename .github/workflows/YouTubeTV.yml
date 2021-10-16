@@ -766,6 +766,15 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(youtube-dl -g https://www.youtube.com/watch?v=FjHGZj2IjBk)
+        EOL
+    - name: Get cfjd.m3u8 
+      run: |
+        touch ./cfjd.m3u8 
+        sudo cat >./cfjd.m3u8  <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/channel/UC-q1OwxWpoX4Ywou47xWM_w/live)
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
